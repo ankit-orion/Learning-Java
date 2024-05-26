@@ -10,6 +10,8 @@ public class Functions {
 
         // greeting();
         System.out.println(add(10, 29));;
+        System.out.println(getName());
+        System.out.println(FullName("Ankit "));
     }
     // static void printName(){
     //     System.out.println("Ankit Mishra");
@@ -23,5 +25,18 @@ public class Functions {
     // return type function
     static int add(int a, int b){
         return a + b;
+    }
+
+    // returing a string
+    static String getName(){
+        return "Ankit Mishra";
+    }
+    static String FullName(String firstName){
+        return firstName + "Mishra";
+    }
+    static void SwapNumbers(int a, int b){
+        int temp = a;
+        a = b;
+        b = temp;
     }
 }
