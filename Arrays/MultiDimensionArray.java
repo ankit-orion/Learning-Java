@@ -58,5 +58,10 @@ public class MultiDimensionArray {
             }
             System.out.println();
         }
+
+        // using Arrays.toString() method to print the arrys 
+        for(int[] i: arr1){
+            System.out.println(Arrays.toString(i));
+        }
     }
 }
