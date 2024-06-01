@@ -12,6 +12,9 @@ public class LearningConstructors {
         s1.changeName("Rahul Sharma");
         System.out.println("Printing name after changing the name using method: " + s1.name);
         Student s2 = new Student(12, "Tushar Pachouri", 99.5f);
+
+        // creating object of the student class using the object of the same class
+        Student s3 = new Student(s2);
     }
 }
 class Student{
@@ -61,6 +64,25 @@ class Student{
         // yes we can use both the constructors in the same class
         // but we need to call the constructor manually while creating the object
         // if we don't call the constructor manually then the default constructor will be called
+    }
 
+    // Constructor Overloading
+    // we can create multiple constructors in the same class
+    // but the parameters should be different
+    // this is called constructor overloading
+    // we can use this to pass the values to the object
+    // we need to call this manually while creating the object
+    // constructor overloading is same as parameterized constructor but the parameters should be different
+
+    // constructor that takes values from other object
+    Student(Student other){
+        // other is the object of the same class
+        name = "Anmol Jain";
+        this.rno = other.rno;
+        this.marks = other.marks;
+        System.out.println("Student Details:");
+        System.out.println("Roll Number: " + rno);
+        System.out.println("Name: " + name);
+        System.out.println("Marks: " + marks);
     }
 }
