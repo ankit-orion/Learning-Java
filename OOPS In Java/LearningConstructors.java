@@ -2,6 +2,10 @@ public class LearningConstructors {
     public static void main(String[] args) {
         // creating first object of the student class 
         Student s1 = new Student();
+        Student s4 = s1;
+        s4.name = "Ankit";
+        System.out.println(s1.name);
+
         // printing the details in the main function only
         System.out.println("Printing roll number in the main function: " + s1.rno);
 
@@ -46,6 +50,7 @@ class Student{
         System.out.println("Name: " + name);
         System.out.println("Marks: " + marks);
     }
+
     // passing the values to the constructor
     // this is called parameterized constructor
     // it can be used to pass the values to the object
@@ -85,4 +90,11 @@ class Student{
         System.out.println("Name: " + name);
         System.out.println("Marks: " + marks);
     }
+    // calling the constructor from the constructor
+    // we can call the constructor from the constructor
+    // this is called constructor chaining
+    // we can use this to pass the values to the object
+    // we need to call this manually while creating the object
+    // example of constructor chaining
+    
 }
